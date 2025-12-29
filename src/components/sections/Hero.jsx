@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import profileImg from "../../assets/profile.jpg";
 
 export function Hero() {
     return (
@@ -48,7 +49,7 @@ export function Hero() {
                         <div className="relative h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px]">
                             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-purple-500 blur-[80px] opacity-50"></div>
                             <img
-                                src="/src/assets/profile.jpg"
+                                src={profileImg}
                                 alt="Muammar Rafi"
                                 className="relative h-full w-full rounded-3xl object-cover shadow-2xl ring-1 ring-white/10"
                             />
